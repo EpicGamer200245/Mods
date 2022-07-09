@@ -50,8 +50,20 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\Downloads\Apes vs Helium v1-4-0\Apes vs Helium_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
