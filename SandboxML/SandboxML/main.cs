@@ -7,10 +7,11 @@ using UnityEngine.UI;
 using MarchingBytes;
 using System;
 using UnityEngine.Events;
+using static MelonLoader.MelonLogger;
 
 
-[assembly: MelonInfo(typeof(SandBox.Sandbox), "Sandbox", "1.0.0", "EpicGamer")]
-[assembly: MelonGame("Sayan", "Apes vs Helium")]
+[assembly: MelonInfo(typeof(SandBox.Sandbox), "Sandbox", "1.1.0", "EpicGamer")]
+[assembly: MelonGame("Sayan", "Apes vs Helium")]    
 
 namespace SandBox
 {
@@ -28,6 +29,16 @@ namespace SandBox
         {
             base.OnInitializeMelon();
             LoggerInstance.Msg("Sandbox loaded.");
+        }
+
+        [HarmonyPatch(typeof(MenuScript), "OnEnable")]
+        public class MenuScriptOnEnable
+        {
+            [HarmonyPostfix]
+            public static void Postfix(ref MenuScript __instance)
+            {
+                __instance.gameObject.AddComponent<SandboxGUI>();
+            }
         }
 
         [HarmonyPatch(typeof(WaveSpawner), "Update")]
@@ -52,7 +63,11 @@ namespace SandBox
                     __instance.nextwave -= 1;
                     __instance.waveNumberText.text = (__instance.nextwave + 1).ToString() + "/" + __instance.lastRound;
                 }
+
+                
             }
+            
+
         }
 
         [HarmonyPatch(typeof(Currency), "UpdateCurrency")]

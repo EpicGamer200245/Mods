@@ -7,8 +7,8 @@
     <ProjectGuid>{BEE1DCC3-4A69-4FB5-86E8-E6F6D22640F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SandboxML</RootNamespace>
-    <AssemblyName>SandboxML</AssemblyName>
+    <RootNamespace>RoundSkipper</RootNamespace>
+    <AssemblyName>RoundSkipper</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,7 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="GUIThings.cs" />
     <Compile Include="main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
