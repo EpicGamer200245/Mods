@@ -1,13 +1,6 @@
 ﻿using MelonLoader;
 using HarmonyLib;
-using UnityEngine;
-using System.Reflection;
-using TMPro;
-using UnityEngine.UI;
-using MarchingBytes;
-using System;
-using UnityEngine.Events;
-using static MelonLoader.MelonLogger;
+// ReSharper disable All
 
 
 [assembly: MelonInfo(typeof(AllBuckshot.AllBuckshot), "All Buckshot", "1.0.0", "EpicGamer")]
@@ -18,8 +11,6 @@ namespace AllBuckshot
 
     public class AllBuckshot : MelonMod
     {
-        public static int ChangedPrimary;
-        public static int ChangedSecondary;
         public override void OnInitializeMelon()
         {
             base.OnInitializeMelon();
@@ -34,7 +25,7 @@ namespace AllBuckshot
             {
                 __instance.projectileNumber = Weapon.ProjectileNumber.oneShot;
                 __instance.projectilesPerShot = 6;
-                __instance.spread = 0.04f;
+                __instance.spread = 0.02f;
             }
         }
     }
